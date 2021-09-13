@@ -1,0 +1,13 @@
+BACKEND:
+Pages:
+- Loga
+- Podstrony +
+- Strona Główna: +
+  * Slider +
+  * Opisy + (O naszej marce, offline, poligrafia, współpracowali z nami, tutaj tez jesteśmy, zapraszamy na blog)
+  * Współpracowali z nami +
+  * Tutaj Też Jesteśmy +
+- Blog +
+- Galeria +
+- Skrzynka mailowa +
+- Media +

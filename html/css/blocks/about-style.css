@@ -1,0 +1,24 @@
+.about {
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+
+}
+.why_us_background {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.why_us {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about__bg{
+  background-image: url("./img/photo9.jpg");
+  height: 100%;
+}

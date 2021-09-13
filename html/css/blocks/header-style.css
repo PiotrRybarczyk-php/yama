@@ -1,0 +1,211 @@
+.main-header .navbar-brand {
+    padding: 0; }
+  .main-header__navbar {
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600!important;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    z-index: 10001; }
+  .main-header__logo {
+    max-width: 100%;
+    height: auto; }
+  .main-header .navbar-brand {
+    width: 210px; }
+  .main-header__social-link {
+    display: inline-block; }
+    .main-header__nav-link{
+      color: #2C2C2C!important; }
+    .main-header__social-link:hover {
+      transform: scale(1.1); }
+  .main-header__lang {
+    margin: 0 33px;
+    color: #000000; }
+  .main-header__lang-arrow {
+    margin-left: 10px; }
+  .main-header .collapse {
+    justify-content: space-between; }
+  .main-header__social-link {
+    color: black;
+    margin: 0 5px; }
+  .main-header__social-link:hover {
+        color: black;
+        margin: 0 5px; }
+  .main-header .navbar-nav {
+    margin-left: auto; }
+  .main-header .carousel-item {
+    background-color:#2C2C2C!important; 
+    position: relative; }
+  .main-header__carousel-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .main-header__background {
+    background-color: #2C2C2C;
+    width: 210px;
+    height: 100%;
+    position: relative; }
+    .main-header__background::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      bottom: 0;
+      top: 0;
+      display: block;
+      width: 100vh;
+      background-color: #2C2C2C; }
+  .main-header__carousel-img {
+    height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    width: 70%; }
+  .main-header__title-box {
+    background: #fff;
+    padding: 65px;
+    position: absolute;
+    z-index: 1002;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+    width: 625px; }
+  .main-header__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #181818;
+    font-size: 58px;
+    letter-spacing: 0.98px;
+    line-height: 1; }
+  .main-header__separator {
+    width: 111px;
+    height: 4px;
+    display: block;
+    background-image: url("img/shape1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 30px 0; }
+  .main-header__text {
+    color: #181818;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin-bottom: 50px; }
+  .main-header__btn {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #2C2C2C;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    border: 2px solid #2C2C2C;
+    transition: 0.5s;
+    cursor: pointer; }
+    .main-header__btn:hover {
+      background: #2C2C2C!important;
+      color: #000000!important;
+      color: white!important; }
+  .main-header__control-container {
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end; }
+  .main-header__control-box {
+    display: flex; }
+  .main-header .carousel-control-prev,
+  .main-header .carousel-control-next {
+    width: 50px;
+    height: 49px;
+    position: static;
+    background-color: #2C2C2C;
+    opacity: 0.8!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s; }
+  .main-header .carousel-control-prev {
+    left: 0;
+    background-image: url("../../img/carousel-arrow-left.png"); }
+    .main-header .carousel-control-prev:hover {
+      background-image: url("../../img/carousel-arrow-left-hover.png");
+      background-color: #fff;
+      background-position: center;
+      opacity: 1; }
+  .main-header .carousel-control-next {
+    right: 0;
+    background-image: url("../../img/carousel-arrow-right.png"); }
+    .main-header .carousel-control-next:hover {
+      background-image: url("../../img/carousel-arrow-right-hover.png");
+      background-color: #fff;
+      background-position: center;
+      opacity: 1; }
+.social__bar{
+  width: 200px;
+  height: 100%;
+  background-color: #2C2C2C;
+  position: absolute;
+  display: flex;
+  align-items:center;
+}
+.social__mini{
+  display: none;
+  width: 100%!important;
+  height: 100px;
+  background-color: #2C2C2C;
+  align-items:center;
+}
+.social__box{
+  margin: auto;
+}
+.social__circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10em;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-top: 15px;
+}
+
+.social__icon{
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social__icon:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.sticky {
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.normal {
+  position: relative!important;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.nav__bordered{
+    border-bottom: 1px solid black;
+}

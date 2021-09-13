@@ -1,0 +1,44 @@
+.contact_us {
+
+   height: 500px;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 150px 0px;
+
+}
+.contact_title {
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #181818;
+  font-size: 38px;
+  letter-spacing: 0.98px;
+  text-shadow: 2px 2px #2C2C2C;
+
+}
+.contact_btn {
+  font-family: "Montserrat", sans-serif;
+    background-color: #2C2C2C;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    border: 2px solid #2C2C2C;
+    transition: 0.5s;
+    cursor: pointer; 
+}
+.contact_btn:hover {
+  background: #2C2C2C!important;
+      color: #000000!important;
+      color: white!important;  }
+.contact_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #181818;
+  font-size: 18px;
+  letter-spacing: 0.98px;
+  line-height: 1;
+}
