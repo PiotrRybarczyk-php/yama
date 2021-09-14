@@ -211,12 +211,66 @@ h1{
 .small_tile{
     max-width: 260px;
     max-height: 260px;
+    position: relative;
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.small_tile div{
+    position: absolute;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 34px 40px 34px 40px;
+    background-color: #C4012F;
+}
+
+.small_tile div:hover{
+    opacity: 1.0;
+}
+
+.small_tile div h1{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.small_tile div h2{
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 200;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    text-transform: unset;
+}
+.small_tile div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: #C4012F;
+    transition: 0.3s;
+    width: 45px;
+    height: 45px;
+}
+.small_tile div button i{
+    height: 14px;
+    content: url('../icons/arrow-white.svg');
+}
+.small_tile div button:hover{
+    background-color: white;
+}
+.small_tile div button:hover > i{
+    content: url('../icons/arrow-red.svg');
 }
 .last_tile{
     background-color: #EEEEEE;
@@ -280,6 +334,7 @@ h1{
     max-width: 327px;
     width: 100%;
     height: 71px;
+    transition: 0.3s;
 }
 .big_tile button i{
     display: flex;
@@ -287,6 +342,15 @@ h1{
     transition: 0.3s;
     width: 20%;
     padding-left: 10%;
+    height: 15px;
+    content: url('../icons/arrow-white.svg');
+}
+.big_tile button:hover{
+    background-color: white;
+    color: #C4012F;
+}
+.big_tile button:hover > i {
+    content: url('../icons/arrow-red.svg');
 }
 .btn_black{
     border: none;
@@ -312,6 +376,119 @@ h1{
 }
 .btn_black:hover > i{
     padding-left: 16%;
+}
+.timeline{
+    padding-top: 60px;
+}
+.timeline_box{
+    position: relative;
+    max-width: 514px;
+    min-height: 200px;
+    width: 100%;
+    display: block;
+    padding-right: 24px;
+    padding-bottom: 100px;
+}
+.timeline_box div{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #C4012F 33%, rgba(255,255,255,0) 0%);
+    background-position: 0% 40px;
+    background-size: 10px 3px;
+    background-repeat: repeat-x;
+}
+.timeline_box div year{
+    display: flex;
+    align-items: center;
+    width: 178px;
+    height: 76px;
+    background-color: white;
+    font-size: 64px;
+    font-weight: 400;
+    color: #C4012F;
+}
+.timeline_box h3{
+    font-size: 27px;
+    font-weight: 400;
+    padding: 13px 0px 13px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+.timeline_box subdiv{
+max-width: 398px;
+width: 100%;
+min-height: 95px;
+background-color: #EEEEEE;
+display: flex;
+align-items: center;
+padding-left: 23px;
+padding-right: 23px;
+margin-bottom: 24px;
+}
+.timeline_box img{
+    height: 56px;
+}
+.timeline_box label{
+    display: block;
+    padding-left: 19px;
+    height: 100%;
+}
+.timeline_box h5{
+    font-size: 21px;
+    font-weight: 200;
+}
+.timeline_box h4{
+    font-size: 30px;
+    font-weight: 200;
+}
+.info_left{
+    display: block;
+    width: 50%;
+}
+.info_left img{
+    width: 235px;
+    height: 174px;
+}
+.info_left h1{
+    margin: 38px 0px 0px 0px;
+    font-size: 5.4vw;
+    font-weight: 400;
+}
+.info_right{
+    display: block;
+    width: 50%;
+    padding-left: 72px;
+}
+.info_right h1{
+    padding-top: 12px;
+    font-size: 50px;
+    font-weight: 400;
+}
+.info_right h2{
+    color: black;
+    opacity: 0.8;
+    font-size: 23px;
+    font-weight: 200;
+    text-transform: unset;
+    padding-bottom: 24px;
+}
+.listing_flex{
+    display: flex;
+    width: 100%;
+}
+.listing_flex div{
+    width: 50%;
+    min-height: 650px;
+}
+.listing_flex .listing_bc{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.listing_flex .listing_info{
+    padding-left: 140px;
+    padding-right: 138px;
 }
 @media(max-width: 1620px){
     .logo_box{
@@ -345,6 +522,9 @@ h1{
         font-size: 9px;
         width: unset;
     }
+    .small_tile div{
+        padding-top: 20px;
+    }
     .big_tile div h1{
         font-size: 52px;
     }
@@ -377,10 +557,54 @@ h1{
     .carousel-content h1{
         font-size: 62px;
     }
+    .big_tile div{
+        padding: 25px 21px 25px 21px;
+    }
+    .big_tile div h1{
+        font-size: 46px;
+    }
+    .big_tile div h2{
+        font-size: 16px;
+    }
+    .big_tile div button{
+        font-size: 18px;
+        height: 50px;
+    }
+    .small_tile div{
+        padding: 6px 6px 6px 6px;
+    }
+    .small_tile div h1{
+        font-size: 24px;
+    }
+    .small_tile div h2{
+        font-size: 13px;
+    }
+    #carbox{
+        flex-direction: column;
+    }
+    .big_tile{
+        width: 100%;
+        height: 320px;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+    #cargrid{
+        width: 100%;
+    }
+    .timeline_box h5{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .timeline_box h4{
+        font-size: 24px;
+        font-weight: 200;
+    }
 }
 @media(max-width: 512px){
     nav{
         padding-top: 16px;
+        position: fixed !important;
+        min-height: 120px;
     }
     .cross{
         padding: 24px 6px 42px 6px;
@@ -431,9 +655,6 @@ h1{
     h2{
         font-size: 16px;
     }
-    #carbox{
-        flex-direction: column;
-    }
     .big_tile{
         width: 100%;
         height: 320px;
@@ -446,18 +667,24 @@ h1{
     .tile_outline{
         justify-content: center;
         padding-right: 0px;
-        height: 260px;
+        height: 160px;
     }
-    .last_tile h1{
-        font-size: 20px;
-        margin: 0px;
-        padding: 29px 36px 74px 36px;
+    #infoflex{
+        flex-wrap: wrap;
     }
-    .btn_black{
-        font-size: 12px;
-        max-width: 181px;
+    .info_left{
         width: 100%;
-        height: 47px;
-        margin: 0px 0px 0px 36px;
+    }
+    .info_left h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .info_right{
+        padding-left: 2px;
+        width: 100%;
+    }
+    .info_left img{
+        width: 100%;
+        height: 200px;
     }
 }
