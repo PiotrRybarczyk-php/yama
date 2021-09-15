@@ -481,15 +481,155 @@ margin-bottom: 24px;
     width: 50%;
     min-height: 650px;
 }
-.listing_flex .listing_bc{
+.listing_bc{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.listing_flex .listing_info{
+.listing_info{
+    display: block;
+    padding-top: 110px;
     padding-left: 140px;
     padding-right: 138px;
 }
+.listing_info h2{
+    color: black;
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.listing_info h1{
+    color: black;
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 41px;
+}
+.listing_info desc{
+    display: block;
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 41px;
+}
+.listing_info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 224px;
+    min-height: 60px;
+    background-color: #C4012F;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+.listing_info a i{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    width: 18%;
+    padding-left: 10%;
+}
+.listing_info a:hover > i{
+    padding-left: 18%;
+}
+.yama_banner{
+    width: 100%;
+    height: 224px;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-color: black;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.yama_banner div{
+    width: 100%;
+    height: 100%;
+}
+.yama_banner .shadow_long{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 100%);
+    display: flex;
+}
+.yama_banner .shadow_short{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 45%);
+    display: flex;
+}
+.full{
+    background-position-x: center !important;
+    background-position-y: 67% !important;
+    background-size: cover !important;
+
+}
+icon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+icon img{
+    width: 60px;
+    height: 60px;
+}
+icon p{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    opacity: 0.8;
+    font-size: 19px;
+}
+.yama_banner .content{
+    display: flex;
+    width: 80%;
+}
+.yama_banner .content-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.yama_banner .filler{
+    width: 100%;
+}
+
+.yama_banner .filler h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 200;
+}
+.yama_banner .filler h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+.yama_banner a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 328px;
+    min-height: 71px;
+    width: 100%;
+    margin-right: 6px;
+    background-color: #C4012F;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 22px;
+}
+.yama_banner a i{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    width: 20%;
+    padding-left: 10%;
+}
+.yama_banner a:hover > i{
+    padding-left: 18%;
+}
+
 @media(max-width: 1620px){
     .logo_box{
         flex-direction: column;
@@ -599,6 +739,30 @@ margin-bottom: 24px;
         font-size: 24px;
         font-weight: 200;
     }
+    .listing_flex.odd{
+        flex-wrap: wrap-reverse;
+    }
+    .listing_flex.even{
+        flex-wrap: wrap;
+    }
+    .listing_flex div{
+        width: 100%;
+    }
+    .listing_info{
+        min-height: 580px !important;
+    }
+    .yama_banner .content{
+        width: 70%;
+    }
+    .yama_banner .filler{
+        width: 30%;
+    }
+    .yama_banner .filler h1{
+        font-size: 32px;
+    }
+    .yama_banner .filler h2{
+        font-size: 32px;
+    }
 }
 @media(max-width: 512px){
     nav{
@@ -686,5 +850,37 @@ margin-bottom: 24px;
     .info_left img{
         width: 100%;
         height: 200px;
+    }
+    .listing_bc{
+        min-height: 550px !important;
+    }
+    .listing_info{
+        padding: 30px 30px 30px 30px;
+    }
+    .listing_info h2{
+        font-size: 4vw;
+    }
+    .listing_info h1{
+        font-size: 11vw;
+    }
+    .yama_banner{
+        background-size: 110%;
+    }
+    icon p{
+        font-size: 15px;
+    }
+    .yama_banner .content{
+        width: 100%;
+    }
+    .yama_banner .content-2{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .yama_banner .filler{
+        display: none !important;
+    }
+    .yama_banner a{
+        margin-right: 0px;
+        margin-top: 32px;
     }
 }

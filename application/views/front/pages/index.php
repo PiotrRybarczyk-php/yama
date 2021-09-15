@@ -60,8 +60,8 @@
             <div class="tile_outline">
                 <div class="small_tile" style="background-image:url(<?= base_url() . 'assets/front/img/car-1.jpeg'; ?>)">
                     <div>
-                        <h1>Juke</h1>
-                        <h2>Crossover Coupe</h2>
+                        <h1>X-TRAIL</h1>
+                        <h2>Większy SUV na większe przygody</h2>
                         <span class="flex_box flex_align_e" style="height:65%;"><button><i></i></button></span>
                     </div>
                 </div>
@@ -235,13 +235,94 @@
     </div>
 </section>
 <section class="sep_top-xl">
-    <div class="listing_flex">
+    <div class="listing_flex odd">
         <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/Osielsko/info-1.jpg' ?>)"></div>
         <div class="listing_info">
             <h2>UWAŻNOŚĆ - MAMY TO W DNA</h2>
             <h1>Historia marki Yama</h1>
             <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
-            <button>O NAS</button>
+            <a href="#">O NAS <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
         </div>
+    </div>
+    <div class="listing_flex even">
+        <div class="listing_info">
+            <h2>KOMPLEKSOWA POMOC - MAMY TO Z SERCA</h2>
+            <h1>Autoryzowany Serwis Yama</h1>
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+            <a href="#">SERWIS <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+        <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/Osielsko/serwis.JPG' ?>)"></div>
+    </div>
+</section>
+<div class="yama_banner" style="background-image:url(<?= base_url() . 'assets/front/img/Osielsko/lakier.jpg'; ?>)">
+    <div class="shadow_long">
+        <div class="content">
+            <icon>
+                <img src="<?= base_url() . 'assets/front/icons/banner-1.svg' ?>">
+                <p>Serwis mechaniczny</p>
+            </icon>
+            <icon>
+                <img src="<?= base_url() . 'assets/front/icons/banner-3.svg' ?>">
+                <p>Serwis blacharsko-lakierniczy</p>
+            </icon>
+            <icon>
+                <img src="<?= base_url() . 'assets/front/icons/banner-2.svg' ?>">
+                <p>Części i akcesoria</p>
+            </icon>
+        </div>
+        <div class="filler"></div>
+    </div>
+</div>
+<section>
+    <div class="listing_flex odd">
+        <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/saleswoman.jpg' ?>)"></div>
+        <div class="listing_info">
+            <h2>KROK PRZED ZDARZENIAMI - TAKIE MAMY PERSPEKTYWY</h2>
+            <h1>Yama Ubezpieczenia</h1>
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+            <a href="#">Ubezpieczenia <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+    </div>
+    <div class="listing_flex even">
+        <div class="listing_info">
+            <h2>ELASTYCZNE MYŚLENIE - TAKĄ MAMY GŁOWĘ</h2>
+            <h1>Yama Finansowanie</h1>
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+            <a href="#">finansowanie <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+        <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/car_woman.JPG' ?>)"></div>
+    </div>
+</section>
+<div class="yama_banner full" style="background-image:url(<?= base_url() . 'assets/front/img/range-normal.jpg'; ?>)">
+    <div class="shadow_short">
+        <div class="filler" style="display:flex;align-items:center;">
+            <div style="margin-left:8vw;width:max-content;height:min-content;">
+                <h1>Nissany</h1>
+                <h2>dostępne na już!</h2>
+            </div>
+        </div>
+        <div class="content-2">
+            <a href="#">Dostępne Pojazdy <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="listing_flex odd">
+        <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/Toruń/display.jpg' ?>)"></div>
+        <div class="listing_info">
+            <h2>ZAWSZE TAM, GDZIE ZMIANY - TO NAZYWAMY WSZECHSTRONNOŚCIĄ</h2>
+            <h1>Samochody używane Yama</h1>
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+            <a href="#">sprawdź ofertę <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+    </div>
+    <div class="listing_flex even">
+        <div class="listing_info">
+            <h2>PISZEMY O NISSANIE - MAMY TAKĄ PASJĘ</h2>
+            <h1>Aktualności</h1>
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia. Aenean id neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius vulputate. In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet luctus. Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque luctus, est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui, blandit nec volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+            <a href="#">aktualności <i><img style="width:11px;" src="<?= base_url('assets/front/icons/arrow-white.svg'); ?>"></i></a>
+        </div>
+        <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/Toruń/slide-3.jpg' ?>)"></div>
     </div>
 </section>
