@@ -629,6 +629,81 @@ icon p{
 .yama_banner a:hover > i{
     padding-left: 18%;
 }
+section .align_c{
+    text-align: center;
+}
+.yama_spacer{
+    width: 100%;
+    height: 112px;
+}
+.bcard label{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: black;
+}
+.bcard{
+    margin-top: 18px;
+}
+.card_btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 21px 18px 21px 18px;
+    left: calc(100% - 70px);
+    background-color: #C4012F;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card_btn:hover{
+    width: 260px;
+}
+.card_btn img{
+    width: 32px;
+    height: 27px;
+}
+.card_btn p{
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    margin: 0px !important;
+    padding-left: 17px !important;
+}
+.red_label{
+    padding: 13px 0px 13px 28px;
+    background-color: #C4012F;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.hours{
+    padding: 18px 0px 26px 28px;
+    background-color: #EEEEEE;
+}
+.bcard label{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    color: black;
+}.bcard p{
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: black;
+    padding-bottom: 2px;
+    line-height: 1.5rem;
+    margin: 0px !important;
+}
+line{
+    display: flex;
+}
+
 
 @media(max-width: 1620px){
     .logo_box{

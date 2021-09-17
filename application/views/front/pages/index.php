@@ -326,3 +326,44 @@
         <div class="listing_bc" style="background-image:url(<?= base_url() . 'assets/front/img/Toruń/slide-3.jpg' ?>)"></div>
     </div>
 </section>
+<section class="sep_top-xl">
+    <div class="block_normal yama_padding align_c sep_bot-l">
+        <h2>ZBUDOWALIŚMY WYJĄTKOWE MIEJSCE, GDZIE SPRZEDAJEMY SAMOCHODY. TAKĄ MAMY MISJĘ.</h2>
+        <h1>Salony Nissan Yama</h1>
+    </div>
+    <div class="grid-3 yama_padding">
+        <div class="block_normal debug_black">
+            <div class="block_normal bcard">
+                <label>Nissan Yama Bydgoszcz</label>
+                <p>ul. Szosa Gdańska 28, 86-031 Osielsko</p>
+                <span class="card_btn"><img src="<?= base_url() . 'assets/front/icons/car-icon.svg'; ?>">
+                    <p>WSKAZÓWKI DOJAZDU</p>
+                </span>
+            </div>
+            <div class="block_normal bcard">
+                <line>
+                    <label>T:</label>
+                    <p style="padding-left:1rem;">+48 52 360 53 10</p>
+                </line>
+                <line>
+                    <label>E:</label>
+                    <p style="padding-left:1rem;">biuro@yama.pl</p>
+                </line>
+            </div>
+            <div class="block_normal bcard debug_black">
+                <div class="red_label">GODZINY OTWARCIA</div>
+                <div class="hours">
+                    <div class="flex_box">
+                        <label style="width:123px">PN-PT:</label>
+                        <p>9:00 - 20:00</p>
+                    </div>
+                    <div class="flex_box">
+                        <label style="width:123px">Sobota:</label>
+                        <p>9:00 - 16:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex_box size-2 debug_black"></div>
+    </div>
+</section>

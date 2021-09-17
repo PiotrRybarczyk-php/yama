@@ -4,12 +4,11 @@
 </footer>
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="<?= assets(); ?>dist/owl.carousel.min.js"></script> -->
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script> -->
 <script type="text/javascript" src="<?= assets(); ?>js/lc_lightbox.lite.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lightbox.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/qanim.js"></script>
-<?php if ($cp == 'kontakt') : ?><script src="https://www.google.com/recaptcha/api.js?render=<?= $settings->captcha ?>"></script> <?php endif; ?>
+<?php if ($cp == 'kontakt') : ?><script src="https://www.google.com/recaptcha/api.js?render=<?= @$settings->captcha ?>"></script> <?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 
 <script>
@@ -42,7 +41,7 @@
     }
     window.onresize = reset_bar;
     grecaptcha.ready(function() {
-        grecaptcha.execute('<?= $settings->captcha ?>', {
+        grecaptcha.execute('<?= @$settings->captcha ?>', {
             action: 'homepage'
         }).then(function(token) {
 
@@ -90,7 +89,7 @@
 
     <script>
         grecaptcha.ready(function() {
-            grecaptcha.execute('<?= $settings->captcha ?>', {
+            grecaptcha.execute('<?= @$settings->captcha ?>', {
                 action: 'homepage'
             }).then(function(token) {
 
@@ -103,7 +102,7 @@
             var email = $('#email').val();
 
             grecaptcha.ready(function() {
-                grecaptcha.execute('<?= $settings->captcha ?>', {
+                grecaptcha.execute('<?= @$settings->captcha ?>', {
                     action: 'mailer/send'
                 }).then(function(token) {
                     $('#contact-form').prepend('<input type="hidden" name="token" value="' + token + '">');

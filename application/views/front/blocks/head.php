@@ -9,6 +9,6 @@
   <link href="<?= base_url(); ?>assets/front/css/qanim.css<?= $version; ?>" rel="stylesheet" crossorigin="anonymous" />
   <link href="<?= base_url(); ?>assets/front/css/bootstrap.min.css<?= $version; ?>" rel="stylesheet" crossorigin="anonymous" />
   <link href="<?= base_url(); ?>assets/front/css/style.css<?= $version; ?>" rel="stylesheet" crossorigin="anonymous" />
-  <title><?= $contact->company; ?></title>
+  <title><?= $contact->company ?? 'Nowa Strona'; ?></title>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
 </head>
