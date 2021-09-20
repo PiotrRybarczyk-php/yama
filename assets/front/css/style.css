@@ -115,22 +115,25 @@ nav {
     opacity: 0.3;
     filter:brightness(2.6);
 }
-.carousel{
+.fader{
     height: 100vh;
+    max-height: 1100px;
 }
-.carousel-inner{
+.Slides{
     height: inherit;
-}
-.carousel-item{
-    height: inherit;
-}
-.carousel-photo{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 140px;
+    max-height: 1100px;
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 75%;
+}
+.prev, .next{
+  opacity: 0;
+}
+.carousel-content{
+    display: block;
+    width: 100%;
+    height: min-content;
+    padding-bottom: 116px;
 }
 .carousel-content h1{
    text-transform: uppercase;
@@ -162,27 +165,22 @@ nav {
 .carousel-content a:hover > i{
     padding-left: 18%;
 }
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
+.dot_box{
     justify-content: flex-end;
-    margin-bottom: 116px;
-    margin-left: 0px;
-    margin-right: 0px;
-    list-style: none;
+    left: 0% !important;
+    top: 90% !important;
+    width: 100% !important;
 }
-.carousel-indicators [data-bs-target]{
+.dot_box .dot{
     width: 16px;
     height: 16px;
+    border-radius: 0px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.6);
     opacity: 1;
+    margin: 0px 4px;
 }
-.carousel-indicators .active{
+.dot.active{
     width: 16px;
     height: 16px;
     background-color: #C4012F;
@@ -208,6 +206,10 @@ h1{
     display: flex;
     justify-content: flex-end;
 }
+.tile_outline span{
+    position: absolute;
+    top: calc(85% - 45px);
+}
 .small_tile{
     max-width: 260px;
     max-height: 260px;
@@ -215,7 +217,7 @@ h1{
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .small_tile div{
@@ -634,13 +636,7 @@ section .align_c{
 }
 .yama_spacer{
     width: 100%;
-    height: 112px;
-}
-.bcard label{
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 0px;
-    color: black;
+    height: 90px;
 }
 .bcard{
     margin-top: 18px;
@@ -657,9 +653,13 @@ section .align_c{
     z-index: 3;
     cursor: pointer;
     transition: 0.3s;
+    overflow: hidden;
 }
 .card_btn:hover{
     width: 260px;
+}
+.card_btn:hover > p {
+    opacity: 1.0;
 }
 .card_btn img{
     width: 32px;
@@ -672,6 +672,9 @@ section .align_c{
     font-weight: 400 !important;
     margin: 0px !important;
     padding-left: 17px !important;
+    white-space: nowrap;
+    opacity: 0;
+    transition: inherit;
 }
 .red_label{
     padding: 13px 0px 13px 28px;
@@ -702,6 +705,121 @@ section .align_c{
 }
 line{
     display: flex;
+}
+.map_img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.link_block{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+.img_link{
+    max-width: 398px;
+    width: 100%;
+    min-height: 224px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img_link div{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 26px 49px 26px 56px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.img_link div:hover{
+    background-color: rgba(196, 1, 47,0.8);
+}
+
+.img_link p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+    opacity: 0.75;
+}
+footer{
+    background-color: #343434;
+    padding-top: 100px;
+}
+footer img{
+    margin-bottom: 31px;
+    margin-right: 50px;
+}
+.footer_nissan{
+    width: 157px;
+    height: 157px;
+}
+.footer_yama{
+    width: 157px;
+    height: 30px;
+}
+
+footer h1{
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0px 0px 16px 0px;
+}
+footer a{
+    display: block;
+    font-weight: 200;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    width: 100%;
+    transition: 0.3s;
+}
+footer a:hover{
+ text-decoration: none;
+ color: #C4012F;
+ opacity: 0.8;
+}
+footer .block_normal{
+    padding-right: 16px;
+}
+#models-col{
+    padding-left: 64px;
+}
+.copyright{
+    margin-top: 100px;
+    border-top: 1px solid #EEEEEE;
+    display: flex;
+    min-height: 136px;
+    align-items: center;
+}
+.copyright div{
+    display: flex;
+    width: 50%;
+    font-weight: 200;
+    font-size: 21px;
+    color: white;
+    opacity: 0.75;
+}
+#toright{
+    justify-content: flex-end;
+}
+.copyright a{
+    font-weight: 400;
+    padding-left: 8px;
+    opacity: 0.9;
+    text-decoration: none;
+    display: inline;
+    width: unset;
 }
 
 
@@ -746,6 +864,15 @@ line{
     .big_tile div h2{
         font-size: 18px;
     }
+    .img_link p{
+        font-size: 26px;
+    }
+    .small_tile div h1{
+        font-size: 24px;
+    }
+    .small_tile div h2{
+        font-size: 14px;
+    }
 }
 @media(max-width: 1280px){
     .cross{
@@ -758,16 +885,19 @@ line{
         font-size: 64px;
     }
     .yama_padding{
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: 105px;
+        padding-right: 105px;
     }
     .menu_logo{
         position: absolute;
         z-index: -1;
         width: 100%;
     }
-    .carousel{
+    .fader{
         height: 75vh;
+    }
+    .carousel-content{
+        padding-bottom: 0px;
     }
     .carousel-content h1{
         font-size: 62px;
@@ -786,7 +916,7 @@ line{
         height: 50px;
     }
     .small_tile div{
-        padding: 6px 6px 6px 6px;
+        padding: 6px 6px 6px 24px;
     }
     .small_tile div h1{
         font-size: 24px;
@@ -838,12 +968,38 @@ line{
     .yama_banner .filler h2{
         font-size: 32px;
     }
+    .card_btn{
+    left: calc(100% - 260px);
+    }
+    .map_img{
+        height: 800px;
+    }
+    .copyright div{
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }.copyright div{
+        font-size: 18px;
+    }
+    .copyright a{
+        font-size: 18px;
+    }
 }
 @media(max-width: 512px){
     nav{
         padding-top: 16px;
         position: fixed !important;
         min-height: 120px;
+    }
+    .card_btn{
+        position: static;
+    }
+    .red_label{
+        font-size: 5vw;
+    }
+    .map_img{
+        margin-top: 20px;
+        height: 260px;
     }
     .cross{
         padding: 24px 6px 42px 6px;
@@ -852,8 +1008,8 @@ line{
         font-size: 42px;
     }
     .yama_padding{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .nav_separator{
         width: 30%;
@@ -873,11 +1029,11 @@ line{
     .carousel-content{
         width: 320px;
     }
-    .carousel-indicators{
+    .dot_box{
         justify-content: flex-start;
     }
     .carousel-content h1{
-        font-size: 42px;
+        font-size: 39px;
     }
     .carousel-content a{
         padding-left: 6px;
@@ -957,5 +1113,46 @@ line{
     .yama_banner a{
         margin-right: 0px;
         margin-top: 32px;
+    }
+    .link_block{
+        padding: 8px 0px 8px 0px;
+    }
+    .img_link p{
+        font-size: 24px;
+    }
+    footer h1{
+        font-size: 18px;
+        padding-top: 16px;
+    }
+    footer a{
+        font-size: 18px;
+    }
+    #models-col{
+        padding-left: 0px;
+    }
+    .copyright{
+        display: block;
+    }
+    .copyright #toright{
+        margin-top: 16px;
+        justify-content: center;
+    }
+    .copyright div{
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .footer_nissan{
+        width: 120px;
+        height: 120px;
+    }
+    .footer_yama{
+        width: 120px;
+        height: 22px;
+    }
+    .bcard label{
+        font-size: 21px;
+    }.bcard p{
+        font-size: 21px;
     }
 }
