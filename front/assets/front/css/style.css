@@ -987,7 +987,7 @@ footer .block_normal{
         font-size: 18px;
     }
 }
-@media(max-width: 512px){
+@media(max-width: 768px){
     nav{
         padding-top: 16px;
         position: fixed !important;
